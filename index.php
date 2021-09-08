@@ -480,8 +480,7 @@ $conn = new mysqli(CONF_LOCATION, CONF_ADMINID, CONF_ADMINPASS, CONF_DATABASE);
 
     <!-- Footer -->
     <footer id="footer">
-        <p class="copyright">&copy; 2014-<?php echo date("Y") ?> <a href="http://nhstech.us/">Newtown
-                High School Technology Team</a>
+        <p class="copyright">&copy; 2014-<?php echo date("Y") ?> <a href="https://devinmatte.com">Devin Matte</a>
             </br>
             Design: <a href="https://github.com/devinmatte">Devin Matte</a> - Initial Design: <a
                     href="https://twitter.com/charlesdumais">Charles Dumais</a>
