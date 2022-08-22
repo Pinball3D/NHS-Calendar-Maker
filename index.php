@@ -83,7 +83,7 @@ $conn = new mysqli(CONF_LOCATION, CONF_ADMINID, CONF_ADMINPASS, CONF_DATABASE);
             applicationId: '56ac43b8-dc80-46e2-8377-760a21439e1d',
             site: 'datadoghq.com',
             service:'calendar-maker',
-            version: '2021-2022',
+            version: '2022-2023',
             sampleRate: 100,
             trackInteractions: true,
             })
@@ -367,14 +367,14 @@ $conn = new mysqli(CONF_LOCATION, CONF_ADMINID, CONF_ADMINPASS, CONF_DATABASE);
             <form name="schedule" id="schedule" action=<?php echo $_SERVER['PHP_SELF'] ?> method="post">
                 <div class="row uniform">
                     <div class="6u 12u$(small)">Start Date: <input
-                                data-uk-datepicker="{minDate:'2021-08-29', maxDate:'2022-06-10'}" type=text
+                                data-uk-datepicker="{minDate:'2022-08-29', maxDate:'2023-06-20'}" type=text
                                 name='startdate' id='startdate'
                                 size=50%
-                                value='2021-08-29' tabindex=1></div>
+                                value='2022-08-29' tabindex=1></div>
                     <div class="6u$ 12u$(small)">End Date: <input
-                                data-uk-datepicker="{minDate:'2021-08-29', maxDate:'2022-06-10'}" type=text
+                                data-uk-datepicker="{minDate:'2022-08-29', maxDate:'2023-06-20'}" type=text
                                 name='enddate' id='enddate' size=50%
-                                value='2022-06-09' tabindex=2></div>
+                                value='2023-06-19' tabindex=2></div>
                 </div>
                 </br>
                 <h2><strong>Period 1 Class:</strong></h2>
@@ -473,7 +473,8 @@ $conn = new mysqli(CONF_LOCATION, CONF_ADMINID, CONF_ADMINPASS, CONF_DATABASE);
                 </br></br>
                 <input type=submit id='submitschedule' name='submitschedule' value='Submit Schedule' tabindex=10>
             </form>
-            <p>Currently Supporting Schedules for the 2021-2022 School Year</p>
+            <p>Currently Supporting Schedules for the 2022-2023 School Year</p>
+            <p>Looking for a new maintainer, contact <a href = "mailto:calendarmaker@devinmatte.com?subject=Calendar Maker">Devin Matte</a></p>
         </section>
 
     </div>
@@ -487,13 +488,13 @@ $conn = new mysqli(CONF_LOCATION, CONF_ADMINID, CONF_ADMINPASS, CONF_DATABASE);
             </br>
             CSS Template: <a href="https://html5up.net">HTML5 UP</a>
             </br>
-            <a href="https://github.com/NHSTechTeam/Calendar-Maker" title="GitHub" class="icon fa-github"><span
+            <a href="https://github.com/devinmatte/Calendar-Maker" title="GitHub" class="icon fa-github"><span
                         class="label">GitHub</span>
                         </a><?php
         $commitHash = trim(exec('git log --pretty="%h" -n1 HEAD'));
         $commitDate = new \DateTime(trim(exec('git log -n1 --pretty=%ci HEAD')));
         $commitDate->setTimezone(new \DateTimeZone('UTC'));
-        echo " | <a href=\"https://github.com/NHSTechTeam/Calendar-Maker/commits/" . $commitHash . "\">" . $commitHash . "</a> ";
+        echo " | <a href=\"https://github.com/devinmatte/Calendar-Maker/commits/" . $commitHash . "\">" . $commitHash . "</a> ";
                          ?>
         </p>
     </footer>
