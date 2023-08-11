@@ -1,6 +1,6 @@
 {
   "name": "calendar-maker",
-  "version": "2022.0",
+  "version": "2023.0",
   "description": "A php web app meant to help students and faculty at NHS produce a semester/year long schedule for their google calendars that accounts for all nuances in NHS school schedules",
   "main": "index.php",
   "dependencies": {},
